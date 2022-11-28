@@ -6,17 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "serve": "npm run build && npm run start",
+    "lint:": "next lint",
+    "lint:fix": "next lint --fix"
   },
   "dependencies": {
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
-    "eslint": "8.28.0",
-    "eslint-config-next": "13.0.5",
     "next": "13.0.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-next": "^13.0.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "^2.8.0"
   }
 }
