@@ -18,3 +18,7 @@ serve:
 # lint
 lint:
 	npm run lint:fix
+
+# storybook
+storybook:
+	npm run storybook
